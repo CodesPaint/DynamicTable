@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Records</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <center><button class="button" id="myBtn" onclick="displayForm()">Add Employee</button></center>
+    </div>
+    <br/>
+
+    <div>
+        <table id="employees" class="employees"> 
+
+            <tr> 
+                <th>Name</th> 
+                <th>Employee ID</th>
+                <th>Department</th> 
+                <th>Email Id</th>
+                <th>Date Of Joining(DOJ) </th>
+                <th>&nbsp;</th> 
+            </tr> 
+
+        </table> 
+    </div>
+</div> 
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" >&times;</span>
+    <center>
+        <form autocomplete="off" id="empform">
+            <table  border="0" cellpadding="10" cellspacing="0" id="employeetable">
+                <tr>
+                    <h2>Fill Employee Details</h2>
+                    <p>Please fill in this form to add new employee record.</p>
+
+                </tr>
+
+                <tr>
+                    <td colspan="2"><hr/></td>
+                </tr>
+                <tr>
+                    <td><label for="name"><b>Name</b></label></td>
+                    <td><input type="text" placeholder="Enter Name" name="name" id="name" required></td>
+
+                </tr>
+
+                <tr>
+                    <td><label for="employeeid"><b>Employee Id</b></label></td>
+                    <td><input type="text" placeholder="Enter Employee Id" name="employeeid" id="employeeid" required></td>
+
+                </tr>
+                <tr>
+                    <td><label for="department"><b>Choose Department</b></label></label></td>
+                    <td><select class="department" id="department" name="department">
+                      <option value="Civil Engineering">Civil Engineering</option>
+                      <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+                      <option value="Electrical Engineering">Electrical Engineering</option>
+                      <option value="MBA">MBA</option>
+                      <option value="MCA">MCA</option>
+                  </select></td>
+
+              </tr>
+              <tr>
+                <td><label for="email"><b>Email Id</b></label></td>
+                <td><input type="email" placeholder="Enter Email Id" name="email" id="email" required></td>
+
+            </tr>
+            <tr>
+                <td><label for="doj"><b>Date Of Joining(DOJ)</b></label></td>
+                <td><input type="date" name="doj" id="doj" required></td>
+
+            </tr>
+
+            <tr>
+             <hr>
+             <td><button type="reset" class="clearform" id="clearform">Clear</button></td>
+             <td><button type="button" class="addEmployee" id="addEmployee">Add Employee</button></td>
+
+         </tr>
+         <tr>
+            <td colspan="2"><hr></td>
+        </tr>
+    </table>
+</form>
+</center>
+</div>
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
